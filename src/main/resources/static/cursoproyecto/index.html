@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Java</title>
+</head>
+
+<body>
+    <h1>Ingrese sus datos</h1>
+    <form onsubmit="recibirDatos(); return false;">
+
+        <label for="id">ID:</label>
+        <input type="number" name="id" id="id">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre">
+        <label for="correo">Correo:</label>
+        <input type="email" name="correo" id="correo">
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" name="contrasena" id="contrasena">
+        <div class="bta">
+            <button class="btne" type="submit">Enviar Datos</button>
+        </div>
+    </form>
+    <div class="botonesa">
+        <button onclick="mostrar()">Mostrar Tabla</button>
+        <button class="o" onclick="ocultar()">Ocultar Tabla</button>
+    </div>
+    <br><br>
+    <table id="result">
+    </table>
+    <br><br>
+    <div id="mensajes"></div>
+    <script src="js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+
+    </script>
+
+    
+</body>
+
+
